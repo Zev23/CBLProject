@@ -17,8 +17,8 @@
 		CD216FBD1D16807D00ECA78E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FBC1D16807D00ECA78E /* SystemConfiguration.framework */; };
 		CD216FBF1D16808300ECA78E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FBE1D16808300ECA78E /* libsqlite3.tbd */; };
 		CD216FC11D16808A00ECA78E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FC01D16808A00ECA78E /* libz.tbd */; };
-		CD216FCC1D168DAC00ECA78E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CD216FCB1D168DAC00ECA78E /* README.md */; };
 		CD216FCE1D16946100ECA78E /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FCD1D16946100ECA78E /* CouchbaseLite.framework */; };
+		CD216FD01D16960200ECA78E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CD216FCF1D16960200ECA78E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +35,8 @@
 		CD216FBC1D16807D00ECA78E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		CD216FBE1D16808300ECA78E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		CD216FC01D16808A00ECA78E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		CD216FCB1D168DAC00ECA78E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CD216FCD1D16946100ECA78E /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
+		CD216FCF1D16960200ECA78E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +59,7 @@
 		CD216F961D167F6700ECA78E = {
 			isa = PBXGroup;
 			children = (
+				CD216FCF1D16960200ECA78E /* README.md */,
 				CD216FA11D167F6800ECA78E /* CBLProject */,
 				CD216FA01D167F6800ECA78E /* Products */,
 				CD216FB51D16800000ECA78E /* Frameworks */,
@@ -83,7 +84,6 @@
 				CD216FAB1D167F6800ECA78E /* LaunchScreen.storyboard */,
 				CD216FAE1D167F6800ECA78E /* Info.plist */,
 				CD216FB41D167FBB00ECA78E /* BridgeHeader.h */,
-				CD216FCB1D168DAC00ECA78E /* README.md */,
 			);
 			path = CBLProject;
 			sourceTree = "<group>";
@@ -175,7 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD216FCC1D168DAC00ECA78E /* README.md in Sources */,
+				CD216FD01D16960200ECA78E /* README.md in Sources */,
 				CD216FA51D167F6800ECA78E /* ViewController.swift in Sources */,
 				CD216FA31D167F6800ECA78E /* AppDelegate.swift in Sources */,
 			);
