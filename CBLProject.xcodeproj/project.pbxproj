@@ -18,7 +18,6 @@
 		CD216FBF1D16808300ECA78E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FBE1D16808300ECA78E /* libsqlite3.tbd */; };
 		CD216FC11D16808A00ECA78E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FC01D16808A00ECA78E /* libz.tbd */; };
 		CD216FCE1D16946100ECA78E /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FCD1D16946100ECA78E /* CouchbaseLite.framework */; };
-		CD216FD01D16960200ECA78E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CD216FCF1D16960200ECA78E /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,7 +174,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD216FD01D16960200ECA78E /* README.md in Sources */,
 				CD216FA51D167F6800ECA78E /* ViewController.swift in Sources */,
 				CD216FA31D167F6800ECA78E /* AppDelegate.swift in Sources */,
 			);
