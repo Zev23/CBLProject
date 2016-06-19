@@ -8,14 +8,32 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        print("Application started\n\n")
+        let cblManager = CBLManager.sharedInstance()
+        let cblDatabase = try? cblManager.databaseNamed("cbl")
+        let data = ["name":"CBLTEST", "title":"Demo"]
+        let cblDoc = cblDatabase?.createDocument()
+        let cblDocID = cblDoc?.documentID
+        let cblDocRev = try? cblDoc?.putProperties(data)
+        
+        print("Document created ID=\(cblDocID) REV=\(cblDocRev)")
+        
+        let queryResult = cblDatabase?.document(withID: cblDocID!)
+        let result = queryResult?.properties
+        
+        print("The query result is:")
+        for (key, value) in result! {
+            print("\(key):\(value)")
+        }
+        print("Application completed")
         return true
     }
 

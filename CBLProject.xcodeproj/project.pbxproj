@@ -12,6 +12,13 @@
 		CD216FA81D167F6800ECA78E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD216FA61D167F6800ECA78E /* Main.storyboard */; };
 		CD216FAA1D167F6800ECA78E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD216FA91D167F6800ECA78E /* Assets.xcassets */; };
 		CD216FAD1D167F6800ECA78E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD216FAB1D167F6800ECA78E /* LaunchScreen.storyboard */; };
+		CD216FB91D16806C00ECA78E /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FB81D16806C00ECA78E /* CFNetwork.framework */; };
+		CD216FBB1D16807200ECA78E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FBA1D16807200ECA78E /* Security.framework */; };
+		CD216FBD1D16807D00ECA78E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FBC1D16807D00ECA78E /* SystemConfiguration.framework */; };
+		CD216FBF1D16808300ECA78E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FBE1D16808300ECA78E /* libsqlite3.tbd */; };
+		CD216FC11D16808A00ECA78E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FC01D16808A00ECA78E /* libz.tbd */; };
+		CD216FCC1D168DAC00ECA78E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = CD216FCB1D168DAC00ECA78E /* README.md */; };
+		CD216FCE1D16946100ECA78E /* CouchbaseLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD216FCD1D16946100ECA78E /* CouchbaseLite.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,14 @@
 		CD216FA91D167F6800ECA78E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD216FAC1D167F6800ECA78E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD216FAE1D167F6800ECA78E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD216FB41D167FBB00ECA78E /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		CD216FB81D16806C00ECA78E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CD216FBA1D16807200ECA78E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CD216FBC1D16807D00ECA78E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CD216FBE1D16808300ECA78E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CD216FC01D16808A00ECA78E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CD216FCB1D168DAC00ECA78E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CD216FCD1D16946100ECA78E /* CouchbaseLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CouchbaseLite.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +44,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD216FC11D16808A00ECA78E /* libz.tbd in Frameworks */,
+				CD216FBF1D16808300ECA78E /* libsqlite3.tbd in Frameworks */,
+				CD216FBD1D16807D00ECA78E /* SystemConfiguration.framework in Frameworks */,
+				CD216FBB1D16807200ECA78E /* Security.framework in Frameworks */,
+				CD216FCE1D16946100ECA78E /* CouchbaseLite.framework in Frameworks */,
+				CD216FB91D16806C00ECA78E /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +61,7 @@
 			children = (
 				CD216FA11D167F6800ECA78E /* CBLProject */,
 				CD216FA01D167F6800ECA78E /* Products */,
+				CD216FB51D16800000ECA78E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +82,23 @@
 				CD216FA91D167F6800ECA78E /* Assets.xcassets */,
 				CD216FAB1D167F6800ECA78E /* LaunchScreen.storyboard */,
 				CD216FAE1D167F6800ECA78E /* Info.plist */,
+				CD216FB41D167FBB00ECA78E /* BridgeHeader.h */,
+				CD216FCB1D168DAC00ECA78E /* README.md */,
 			);
 			path = CBLProject;
+			sourceTree = "<group>";
+		};
+		CD216FB51D16800000ECA78E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD216FCD1D16946100ECA78E /* CouchbaseLite.framework */,
+				CD216FC01D16808A00ECA78E /* libz.tbd */,
+				CD216FBE1D16808300ECA78E /* libsqlite3.tbd */,
+				CD216FBC1D16807D00ECA78E /* SystemConfiguration.framework */,
+				CD216FBA1D16807200ECA78E /* Security.framework */,
+				CD216FB81D16806C00ECA78E /* CFNetwork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD216FCC1D168DAC00ECA78E /* README.md in Sources */,
 				CD216FA51D167F6800ECA78E /* ViewController.swift in Sources */,
 				CD216FA31D167F6800ECA78E /* AppDelegate.swift in Sources */,
 			);
@@ -258,10 +296,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CBLProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zev23.CBLProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = $SRCROOT/CBLProject/BridgeHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -270,10 +314,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = CBLProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zev23.CBLProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = $SRCROOT/CBLProject/BridgeHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -297,6 +347,7 @@
 				CD216FB31D167F6800ECA78E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
